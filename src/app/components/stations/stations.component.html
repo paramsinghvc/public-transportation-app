@@ -1,0 +1,14 @@
+<div class="host-el row">
+    <div class="stations col-sm-6 col-xs-12">
+        <label>Source</label>
+        <select (change)="onSourceChanged($event.target.value)">
+            <option *ngFor="let station of stations" value="{{station.abbr}}" [attr.selected]="station.abbr == 'WOAK' ? 'selected' : null">{{station.name}}</option>
+        </select>
+    </div>
+    <div class="stations col-sm-6 col-xs-12">
+        <label>Destination</label>
+        <select (change)="onDestinationChanged($event.target.value)">
+            <option *ngFor="let station of stations" value="{{station.abbr}}" [attr.selected]="station.abbr == 'MONT' ? 'selected' : null">{{station.name}}</option>
+        </select>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="root row">
+    <table class="schedule col-sm-8 col-xs-12" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Train No.</th>
+                <th>Departures</th>
+                <th>Arrivals</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of schedule; let i = index;">
+                <td>{{i + 1}}</td>
+                <td>{{s.origTime}}</td>
+                <td>{{s.destTime}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="right-section col-sm-4">
+        <div class="fare">
+            Fare
+            <p>$ {{fare}}</p>
+        </div>
+        <div class="duration">
+            Duration
+            <p>{{duration}} mins</p>
+        </div>
+    </div>
+</div>

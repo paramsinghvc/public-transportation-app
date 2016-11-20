@@ -10,5 +10,12 @@
 </head>
 <body>
   <app-root>Loading...</app-root>
+  <script>
+  	if('serviceWorker' in navigator){
+  		navigator.serviceWorker.register('./sw.js', function(reg) {
+  			console.log(reg);
+  		})
+  	}
+  </script>
 </body>
 </html>

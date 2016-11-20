@@ -1,3 +1,5 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+	<div class="title">{{title}}</div>
+  	<app-stations (originChanged)="onOriginUpdated($event)" (destChanged)="onDestUpdated($event)"></app-stations>
+  	<app-schedule [originHasChanged]="origHasChanged" [destHasChanged]="destHasChanged"></app-schedule>
+</div>
