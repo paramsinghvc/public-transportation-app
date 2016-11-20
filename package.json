@@ -22,6 +22,7 @@
     "@angular/platform-browser": "~2.1.0",
     "@angular/platform-browser-dynamic": "~2.1.0",
     "@angular/router": "~3.1.0",
+    "angular-cli": "^1.0.0-beta.20-4",
     "core-js": "^2.4.1",
     "cxml": "^0.1.0",
     "idb": "^1.2.1",
@@ -33,7 +34,7 @@
   },
   "devDependencies": {
     "@types/jasmine": "^2.2.30",
-    "@types/node": "^6.0.42",    
+    "@types/node": "^6.0.42",
     "codelyzer": "1.0.0-beta.1",
     "jasmine-core": "2.4.1",
     "jasmine-spec-reporter": "2.5.0",
